@@ -1,7 +1,6 @@
 create or replace function vault.add_hub_party(party_name_arg varchar, origin char(12))
-returns void as 
-$$
-begin 
+returns void 
+as $$
 	insert into vault.hub_party (
 	  hub_party_key,
 	  party_name,
@@ -13,15 +12,14 @@ begin
 	  now(),
 	  'initial'
 	)
-	on conflict (hub_party_key) do nothing;
-end;
+	on conflict (hub_party_key) do nothing
 $$
-language plpgsql;
-
+language sql;
 
 select vault.add_hub_party('Adrián Vega Gómez', 'initial');
 select vault.add_hub_party('Deko Data', 'initial');
 select vault.add_hub_party('Accenture', 'initial');
 select vault.add_hub_party('Pragsis Bidoop', 'initial');
+select vault.add_hub_party('Neoris', 'initial');
 
 select * from vault.hub_party hp;
