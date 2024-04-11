@@ -1,4 +1,3 @@
-
 create or replace function vault.add_lnk_party_employment (company varchar, employee varchar, rec_src char(12))
 returns void as $$
 	insert into vault.lnk_party_employment (
