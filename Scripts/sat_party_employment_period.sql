@@ -36,5 +36,5 @@ select company.party_name, employee.party_name, period.starts, period.ends
 from  vault.sat_party_employment_period period
 inner join vault.lnk_party_employment lpe on period.lnk_party_employment_key = lpe.lnk_party_employment_key
 inner join vault.hub_party company on company.hub_party_key = lpe.hub_party_key_company
-inner join vault.hub_party employee on employee.hub_party_key = lpe.hub_party_key_employee
+inner join vault.hub_party employee on employee.hub_party_key = lpe.hub_party_key_employee;
 

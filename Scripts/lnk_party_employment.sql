@@ -26,4 +26,4 @@ select * from vault.lnk_party_employment lpe;
 
 select company.party_name, employee.party_name from vault.lnk_party_employment lpe
 inner join vault.hub_party company on company.hub_party_key = lpe.hub_party_key_company 
-inner join vault.hub_party employee on employee.hub_party_key = lpe.hub_party_key_employee 
+inner join vault.hub_party employee on employee.hub_party_key = lpe.hub_party_key_employee;
