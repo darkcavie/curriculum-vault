@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagram version="1" name="employment.erd">
 	<entities>
-		<data-source id="postgres-jdbc-18e7f0143b4-6e98c6a5d12a2bdc">
+		<data-source id="postgres-jdbc-19402d65531-5669a25b0da8b2f1">
 			<entity id="1" name="_pg_foreign_data_wrappers" fq-name="information_schema.&quot;_pg_foreign_data_wrappers&quot;" order="0" font="Segoe UI:9:0" x="6625" y="826">
 				<path name="information_schema"/>
 				<path name="curriculum"/>
@@ -610,16 +610,7 @@
 				<path name="vault"/>
 				<path name="curriculum"/>
 			</entity>
-			<entity id="153" name="sat_party_employment_start" fq-name="vault.sat_party_employment_start" order="152" color-bg="228,255,181" font="Segoe UI:9:0" x="40" y="264">
-				<path name="vault"/>
-				<path name="curriculum"/>
-			</entity>
 		</data-source>
 	</entities>
-	<relations>
-		<relation name="lnk_party_employment_company_fk" fq-name="vault.lnk_party_employment.lnk_party_employment_company_fk" type="fk" pk-ref="150" fk-ref="151"/>
-		<relation name="lnk_party_employment_employee_fk" fq-name="vault.lnk_party_employment.lnk_party_employment_employee_fk" type="fk" pk-ref="150" fk-ref="151"/>
-		<relation name="sat_party_employment_period_fk" fq-name="vault.sat_party_employment_period.sat_party_employment_period_fk" type="fk" pk-ref="151" fk-ref="152"/>
-		<relation name="sat_party_employment_period_fk" fq-name="vault.sat_party_employment_start.sat_party_employment_period_fk" type="fk" pk-ref="151" fk-ref="153"/>
-	</relations>
+	<relations/>
 </diagram>
